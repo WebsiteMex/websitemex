@@ -1,0 +1,689 @@
+/* RESET Y ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+:root {
+    /* PALETA RENACENTISTA */
+    --gold-primary: #C6A769;
+    --gold-secondary: #D4B87A;
+    --dark-red: #8B1A1A;
+    --cream: #F5F1E6;
+    --parchment: #F8F4E3;
+    --wood: #5C4033;
+    --ink: #3A2E28;
+    
+    /* FUENTES ANTIGUAS */
+    --font-title: 'Cinzel', serif;
+    --font-text: 'Cormorant Garamond', serif;
+    --font-decorative: 'UnifrakturMaguntia', cursive;
+    
+    /* ESPACIADO */
+    --spacing-sm: 1.2rem;
+    --spacing-md: 2.4rem;
+    --spacing-lg: 4rem;
+    
+    /* EFECTOS VISUALES */
+    --transition-slow: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-fast: all 0.3s ease-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+/* ANIMACIÓN DE ENTRADA */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes parchmentAppear {
+    from { transform: scale(0.8) rotate(-5deg); opacity: 0; }
+    to { transform: scale(1) rotate(0); opacity: 1; }
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(198, 167, 105, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(198, 167, 105, 0.8), 0 0 30px rgba(198, 167, 105, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(198, 167, 105, 0.5); }
+}
+
+/* SPLASH SCREEN */
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeOut 2s forwards 3s;
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; visibility: hidden; }
+}
+
+.splash-logo {
+    width: 200px;
+    height: 200px;
+    background: url('https://cdn-icons-png.flaticon.com/512/1642/1642903.png') center/contain no-repeat;
+    animation: float 4s ease-in-out infinite, glow 3s ease-in-out infinite;
+    margin-bottom: var(--spacing-md);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+}
+
+.splash-title {
+    font-family: var(--font-decorative);
+    font-size: 4rem;
+    color: var(--gold-primary);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: glow 3s ease-in-out infinite;
+}
+
+.splash-subtitle {
+    font-family: var(--font-text);
+    font-size: 1.8rem;
+    color: var(--cream);
+    margin-top: var(--spacing-sm);
+    animation: fadeIn 2s ease-out;
+    font-style: italic;
+    text-align: center;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: var(--font-text);
+    color: var(--ink);
+    background: 
+        url('https://www.transparenttextures.com/patterns/old-paper.png'),
+        linear-gradient(to bottom, #DBC9A6, #C1AB86);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.7;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-out;
+    padding-top: 70px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* HEADER RENACENTISTA */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: var(--spacing-sm) 0;
+    background: rgba(139, 26, 26, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid var(--gold-primary);
+    animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-family: var(--font-decorative);
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    color: var(--gold-primary);
+    position: relative;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    animation: glow 3s ease-in-out infinite;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold-primary);
+    border-radius: 2px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(to bottom, var(--gold-primary), var(--gold-secondary));
+    color: var(--dark-red);
+    font-family: var(--font-title);
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    border: 2px solid var(--dark-red);
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); }
+    to { transform: scale(1.05); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* HERO SECTION ESTILO ANTIGUO */
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-sm);
+    position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
+    background: url('https://www.transparenttextures.com/patterns/parchment.png');
+    border: 15px double var(--gold-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: parchmentAppear 1.5s ease-out;
+}
+
+.hero h1 {
+    font-family: var(--font-title);
+    font-size: clamp(3rem, 7vw, 4.5rem);
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-red);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.1;
+    animation: fadeIn 1.5s ease-out;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--ink);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-style: italic;
+    animation: fadeIn 1.8s ease-out;
+    background: rgba(245, 241, 230, 0.7);
+    padding: 1rem 2rem;
+    border-left: 3px solid var(--gold-primary);
+    border-right: 3px solid var(--gold-primary);
+}
+
+/* PRODUCTOS SECTION ESTILO RENACENTISTA */
+.products-section {
+    padding: var(--spacing-lg) 0;
+    position: relative;
+    background: url('https://www.transparenttextures.com/patterns/old-paper.png');
+    border-top: 5px solid var(--dark-red);
+    border-bottom: 5px solid var(--dark-red);
+    margin: 3rem 0;
+}
+
+.section-title {
+    font-family: var(--font-title);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    text-align: center;
+    margin: var(--spacing-md) auto;
+    color: var(--dark-red);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 2rem;
+    animation: fadeIn 1.2s ease-out;
+    background: url('https://www.transparenttextures.com/patterns/parchment.png');
+    border: 8px double var(--gold-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-title::before,
+.section-title::after {
+    content: "❧";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold-primary);
+    font-size: 2.5rem;
+    opacity: 0.8;
+    animation: float 4s ease-in-out infinite;
+}
+
+.section-title::before {
+    left: -30px;
+}
+
+.section-title::after {
+    right: -30px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) auto;
+}
+
+.product-card {
+    background: url('https://www.transparenttextures.com/patterns/parchment.png');
+    border: 8px double var(--gold-primary);
+    overflow: hidden;
+    position: relative;
+    transform: translateY(40px) rotate(1deg);
+    opacity: 0;
+    transition: var(--transition-slow);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: cardAppear 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    perspective: 1000px;
+}
+
+@keyframes cardAppear {
+    to {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.product-card:hover {
+    transform: translateY(-10px) rotate(0deg) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.product-image {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    border-bottom: 3px solid var(--gold-primary);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+    transform-origin: center;
+    display: block;
+    filter: sepia(0.3) brightness(0.95);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+    filter: sepia(0.1) brightness(1);
+}
+
+.product-image::after {
+    content: "Ars Manu Factum";
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-family: var(--font-decorative);
+    font-size: 1.4rem;
+    color: rgba(139, 26, 26, 0.7);
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    animation: handcraftPulse 3s infinite;
+}
+
+@keyframes handcraftPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+}
+
+.product-info {
+    padding: var(--spacing-sm);
+    position: relative;
+    z-index: 2;
+    background: rgba(248, 244, 227, 0.8);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-family: var(--font-title);
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    margin-bottom: 0.5rem;
+    color: var(--dark-red);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.product-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: var(--gold-primary);
+    transition: var(--transition-slow);
+}
+
+.product-card:hover .product-title::after {
+    width: 100%;
+    left: 0;
+}
+
+.product-description {
+    color: var(--ink);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* PROCESS SECTION ESTILO ANTIGUO */
+.process-section {
+    padding: var(--spacing-lg) 0;
+    position: relative;
+    background: url('https://www.transparenttextures.com/patterns/old-paper.png');
+    border-top: 5px solid var(--gold-primary);
+    border-bottom: 5px solid var(--gold-primary);
+    margin: 3rem 0;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    max-width: 1000px;
+    margin: var(--spacing-md) auto;
+}
+
+.process-card {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: url('https://www.transparenttextures.com/patterns/parchment.png');
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+    opacity: 0;
+    transition: var(--transition-slow);
+    animation: cardAppear 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+    border: 5px double var(--dark-red);
+    perspective: 800px;
+    position: relative;
+}
+
+.process-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--gold-primary);
+    pointer-events: none;
+}
+
+.process-card:hover {
+    transform: scale(1) translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.process-icon {
+    width: 100px;
+    height: 100px;
+    background: var(--parchment);
+    border: 3px solid var(--gold-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-sm);
+    font-size: 2.5rem;
+    color: var(--dark-red);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: float 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+.process-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-red);
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.process-card h3::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    background: var(--gold-primary);
+    transition: var(--transition-slow);
+}
+
+.process-card:hover h3::after {
+    width: 100%;
+    left: 0;
+}
+
+.process-card p {
+    color: var(--ink);
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin: 1rem auto 0;
+    font-style: italic;
+}
+
+/* FOOTER RENACENTISTA */
+footer {
+    background: linear-gradient(to top, var(--wood), var(--dark-red));
+    color: var(--gold-primary);
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-top: 5px solid var(--gold-primary);
+    font-family: var(--font-title);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0,0 Q50,10 100,0 Z" fill="%23C6A769"/></svg>') center top repeat-x;
+    background-size: 100px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.footer-content h3 {
+    font-family: var(--font-decorative);
+    font-size: 3rem;
+    color: var(--gold-primary);
+    margin-bottom: 0.5rem;
+    animation: glow 3s ease-in-out infinite;
+    letter-spacing: 3px;
+}
+
+.footer-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-family: var(--font-text);
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-sm) 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(198, 167, 105, 0.2);
+    color: var(--gold-primary);
+    font-size: 1.8rem;
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--gold-primary);
+    animation: float 4s ease-in-out infinite;
+}
+
+.social-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gold-primary);
+    clip-path: circle(0% at center);
+    transition: var(--transition-slow);
+    z-index: -1;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: var(--dark-red);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a:hover::before {
+    clip-path: circle(100% at center);
+}
+
+.copyright {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-top: var(--spacing-sm);
+    position: relative;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-text);
+    border-top: 1px solid var(--gold-primary);
+    border-bottom: 1px solid var(--gold-primary);
+    letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 70vh;
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+    
+    .product-image {
+        height: 220px;
+    }
+    
+    .process-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .splash-title {
+        font-size: 3rem;
+    }
+    
+    .splash-logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        height: 90vh;
+    }
+    
+    .product-image {
+        height: 320px;
+    }
+    
+    .products-grid {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: clamp(3.5rem, 5vw, 4.5rem);
+    }
+    
+    .section-title {
+        font-size: clamp(2.8rem, 3.5vw, 3.8rem);
+    }
+}

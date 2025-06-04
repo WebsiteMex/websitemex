@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkSoul Studio | Arte en Piel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link id="theme-style" rel="stylesheet" href="./tatoo-styles/styles.css">
+
+</head>
+<body>
+    <!-- Contenedor de gotas de tinta -->
+    <div class="ink-drops" id="inkContainer"></div>
+    
+    <!-- Header con menú añadido -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">INK<span>SOUL</span></div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menú de navegación añadido -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#artists">Artistas</a></li>
+                    <li><a href="#process">Proceso</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li>
+                        <button id="switch-style" class="btn" style="top: 1rem; right: 1rem; z-index: 1000;">
+                            Cambiar Estilo
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <h1>Arte que Perdura en la Piel</h1>
+            <p>Estudio de tatuajes donde la creatividad se encuentra con la técnica para crear obras únicas y personales.</p>
+            <a href="#gallery" class="btn">Ver Galería</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Nuestros Trabajos</h2>
+            <p class="section-subtitle">Explora nuestra galería de tatuajes únicos creados con pasión y maestría</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="blackwork">Blackwork</button>
+                <button class="filter-btn" data-filter="realismo">Realismo</button>
+                <button class="filter-btn" data-filter="geometrico">Geométrico</button>
+                <button class="filter-btn" data-filter="acuarela">Acuarela</button>
+                <button class="filter-btn" data-filter="tradicional">Tradicional</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Tatuaje 1 -->
+                <div class="gallery-item" data-category="geometrico">
+                    <img src="https://images.unsplash.com/photo-1615213612131-0a021f6440a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje geométrico">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Diseño Geométrico</h3>
+                        <p class="gallery-item-desc">Mandala en espalda completa</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 2 -->
+                <div class="gallery-item" data-category="realismo">
+                    <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje realista">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Retrato Realista</h3>
+                        <p class="gallery-item-desc">Homenaje familiar en brazo</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 3 -->
+                <div class="gallery-item" data-category="acuarela">
+                    <img src="https://images.unsplash.com/photo-1543436113-01a2e4ae6b0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje acuarela">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Estilo Acuarela</h3>
+                        <p class="gallery-item-desc">Ave Fénix en color</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 4 -->
+                <div class="gallery-item" data-category="tradicional">
+                    <img src="https://images.unsplash.com/photo-1569517282132-25d22f4573e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje tradicional">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Tradicional Japonés</h3>
+                        <p class="gallery-item-desc">Koi en manga completa</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 5 -->
+                <div class="gallery-item" data-category="blackwork">
+                    <img src="https://images.unsplash.com/photo-1579541703128-7a6d4c4c2f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje blackwork">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Blackwork Detallado</h3>
+                        <p class="gallery-item-desc">Diseño tribal en pierna</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 6 -->
+                <div class="gallery-item" data-category="geometrico">
+                    <img src="https://images.unsplash.com/photo-1593705114385-71abbb6a0d0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje minimalista">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Minimalista</h3>
+                        <p class="gallery-item-desc">Símbolo personal en muñeca</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 7 -->
+                <div class="gallery-item" data-category="realismo">
+                    <img src="https://images.unsplash.com/photo-1605649487213-2f7c1a81d0f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje realismo">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Realismo Animal</h3>
+                        <p class="gallery-item-desc">León en pecho</p>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 8 -->
+                <div class="gallery-item" data-category="geometrico">
+                    <img src="https://images.unsplash.com/photo-1605649487214-3f4bb6e5e3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tatuaje geométrico">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-item-title">Geometría Sagrada</h3>
+                        <p class="gallery-item-desc">Diseño en espalda baja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Artists Section -->
+    <section class="artists-section" id="artists">
+        <div class="container">
+            <h2 class="section-title">Nuestros Artistas</h2>
+            <p class="section-subtitle">Conoce al talentoso equipo que da vida a nuestros diseños</p>
+            
+            <div class="artists-grid">
+                <!-- Artista 1 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1564564244660-5d73c057f2d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Artista de tatuajes">
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">Carlos "InkMaster" Rodríguez</h3>
+                        <p class="artist-specialty">Realismo & Retratos</p>
+                        <p>Con más de 15 años de experiencia, especializado en tatuajes hiperrealistas y retratos.</p>
+                    </div>
+                </div>
+                
+                <!-- Artista 2 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1615213612131-0a021f6440a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Artista de tatuajes">
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">Luna García</h3>
+                        <p class="artist-specialty">Geometría & Mandalas</p>
+                        <p>Artista con formación en diseño gráfico, crea patrones geométricos perfectos y mandalas hipnóticos.</p>
+                    </div>
+                </div>
+                
+                <!-- Artista 3 -->
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Artista de tatuajes">
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">Javier "Javi" Morales</h3>
+                        <p class="artist-specialty">Tradicional & Neo-tradicional</p>
+                        <p>Maestro del estilo tradicional americano y japonés con un toque contemporáneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <h2 class="section-title">Nuestro Proceso</h2>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <h3>Consulta</h3>
+                    <p>Discutimos tu idea, ubicación y estilo preferido.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <h3>Diseño</h3>
+                    <p>Nuestros artistas crean un diseño personalizado.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <h3>Sesión</h3>
+                    <p>Realizamos el tatuaje con las mejores técnicas.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-number">4</div>
+                    <h3>Curación</h3>
+                    <p>Te guiamos en el cuidado post-tatuaje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Visítanos</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Estudio</h3>
+                            <p>Calle Arte 123, Barrio Creativo, Madrid</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+34 91 123 45 67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@inksoulstudio.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Viernes: 11:00 - 20:00<br>Sábado: 11:00 - 18:00<br>Domingo: Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Importante</h3>
+                            <p>Solo atendemos con cita previa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="studio-image">
+                    <img src="https://images.unsplash.com/photo-1600974989781-5dee1a8a8c1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior del estudio de tatuajes">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">INK<span>SOUL</span></div>
+                    <p>Arte permanente creado con pasión y precisión en el corazón de Madrid.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Estilos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Realismo</a></li>
+                        <li><a href="#">Blackwork</a></li>
+                        <li><a href="#">Geométrico</a></li>
+                        <li><a href="#">Acuarela</a></li>
+                        <li><a href="#">Tradicional</a></li>
+                        <li><a href="#">Minimalista</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces</h3>
+                    <ul class="footer-links">
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#artists">Artistas</a></li>
+                        <li><a href="#process">Proceso</a></li>
+                        <li><a href="#">Cuidados</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 InkSoul Studio. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+  <script src="./tatoo-scripts/scripts.js"></script>
+</body>
+</html>

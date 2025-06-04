@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores & Tradición | Cocina Auténtica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link id="theme-style" rel="stylesheet" href="./food-styles/styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Sabores & <span>Tradición</span></div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menú de navegación añadido -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#filosofia">Filosofía</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li>
+                        <button id="switch-style" class="btn" style="top: 1rem; right: 1rem; z-index: 1000;">
+                            Cambiar Estilo
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Auténtica Cocina de Mercado</h1>
+            <p>Ingredientes frescos, técnicas tradicionales y sabores que evocan recuerdos</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Specialties Section -->
+        <section class="section" id="especialidades">
+            <div class="container">
+                <h2 class="section-title">Nuestros Platillos Estrella</h2>
+                <p class="section-subtitle">Creaciones que reflejan nuestra pasión por la cocina honesta y de temporada</p>
+                
+                <div class="menu-grid">
+                    <!-- Plato 1 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Risotto de setas">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Risotto de Setas Silvestres</h3>
+                            <p class="menu-item-desc">Arroz carnaroli cremoso con una selección de setas de temporada, reducción de vino blanco y queso parmesano.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Vegetariano</span>
+                                <span class="menu-tag">Temporada</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato 2 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Solomillo">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Solomillo con Salsa de Oporto</h3>
+                            <p class="menu-item-desc">Solomillo de ternera gallega a la parrilla con salsa de oporto y reducción de chalotas, acompañado de patatas confitadas.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Especialidad</span>
+                                <span class="menu-tag">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato 3 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1606755962773-d324e7642c51?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pescado">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Lubina a la Sal con Hierbas</h3>
+                            <p class="menu-item-desc">Lubina fresca del Mediterráneo cocinada en costra de sal marina con hierbas provenzales y acompañada de verduras asadas.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Pescado fresco</span>
+                                <span class="menu-tag">Saludable</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato 4 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ensalada">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Ensalada de Quinoa y Aguacate</h3>
+                            <p class="menu-item-desc">Quinoa orgánica con aguacate, tomates cherry, pepino, germinados y aderezo de lima y cilantro.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Vegano</span>
+                                <span class="menu-tag">Sin gluten</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato 5 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pasta">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Pappardelle con Ragú de Cordero</h3>
+                            <p class="menu-item-desc">Pasta fresca con ragú de cordero de 8 horas de cocción, tomates San Marzano y hierbas aromáticas.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Casero</span>
+                                <span class="menu-tag">Especialidad</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plato 6 -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Postre">
+                        </div>
+                        <div class="menu-details">
+                            <h3 class="menu-item-title">Soufflé de Chocolate con Helado</h3>
+                            <p class="menu-item-desc">Soufflé de chocolate belga 70% con centro líquido, acompañado de helado de vainilla de Madagascar.</p>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Postre</span>
+                                <span class="menu-tag">Recomendado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section about-section" id="filosofia">
+            <div class="container">
+                <h2 class="section-title">Nuestra Filosofía</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1556911220-ef412a21fc17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior del restaurante">
+                    </div>
+                    <div class="about-text">
+                        <p>En Sabores & Tradición, creemos que la auténtica cocina nace de la relación respetuosa con la tierra y sus productores. Nuestro chef, Marco Fernández, crea cada plato como un homenaje a las tradiciones culinarias mediterráneas con un toque contemporáneo.</p>
+                        <p>Trabajamos directamente con agricultores locales, pescadores de cercanías y pequeños productores para garantizar la frescura y calidad de cada ingrediente que llega a nuestra cocina. El resultado son platos que cuentan historias de temporada, territorio y pasión.</p>
+                        <p>Nuestro espacio, diseñado para crear una experiencia íntima y acogedora, refleja la misma atención al detalle que ponemos en cada uno de nuestros platos. Bienvenidos a nuestra mesa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section gallery-section" id="galeria">
+            <div class="container">
+                <h2 class="section-title">Momentos en la Mesa</h2>
+                <p class="section-subtitle">Un vistazo a la experiencia que ofrecemos</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ambiente del restaurante">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1564759077034-936b00d658ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Detalle de cocina">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plato presentado">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barra del restaurante">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vista exterior">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1617196035150-8d5c8dee0e3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Postre detalle">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contacto">
+            <div class="container">
+                <h2 class="section-title">Visítanos</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Calle Gastronomía 45, Barrio Histórico, Valencia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+34 96 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>reservas@saborestradicion.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Horario</h3>
+                                <p>Martes a Sábado: 13:00 - 16:00 | 20:00 - 23:30<br>Domingo: 13:00 - 17:00<br>Lunes: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12320.725777471036!2d-0.377328!3d39.469907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb9f540b3b843fa59!2sValencia!5e0!3m2!1ses!2ses!4v1688551234567!5m2!1ses!2ses" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; border-radius: var(--border-radius);" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Sabores & <span>Tradición</span></div>
+                <p>Cocina honesta, ingredientes excepcionales</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 Sabores & Tradición. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./food-js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Javier Martínez | Medicina Interna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link id="theme-style" rel="stylesheet" href="./doctor-styles/styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                Dr. Javier Martínez
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <button class="nav-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#horario">Horario</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li>
+                        <button id="switch-style" class="btn" style="top: 1rem; right: 1rem; z-index: 1000;">
+                            Cambiar Estilo
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <h1>Medicina Interna con Enfoque Preventivo</h1>
+            <p>Especialista en diagnóstico, tratamiento y prevención de enfermedades del adulto con un enfoque integral y humano.</p>
+            <div class="hero-btns">
+                <a href="#contacto" class="btn">Pedir Cita</a>
+                <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section class="section about-section" id="sobre-mi">
+            <div class="container">
+                <h2 class="section-title">Sobre Mi Experiencia</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Javier Martínez">
+                    </div>
+                    <div class="about-text">
+                        <p>Con más de 15 años de experiencia en medicina interna, mi enfoque se centra en la atención integral del paciente, combinando conocimientos médicos actualizados con un trato humano y cercano.</p>
+                        <p>Mi práctica médica se basa en la prevención, el diagnóstico preciso y el tratamiento personalizado, siempre considerando las necesidades específicas de cada paciente.</p>
+                        
+                        <div class="about-qualifications">
+                            <h3>Formación y Certificaciones</h3>
+                            <div class="qualification-item">
+                                <div class="qualification-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <strong>Especialista en Medicina Interna</strong>
+                                    <p>Universidad de Medicina de Barcelona</p>
+                                </div>
+                            </div>
+                            <div class="qualification-item">
+                                <div class="qualification-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <strong>Máster en Nutrición Clínica</strong>
+                                    <p>Colegio Oficial de Médicos de Madrid</p>
+                                </div>
+                            </div>
+                            <div class="qualification-item">
+                                <div class="qualification-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <strong>Certificado en Medicina Preventiva</strong>
+                                    <p>Sociedad Española de Medicina Interna</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="section" id="servicios">
+            <div class="container">
+                <h2 class="section-title">Servicios Médicos</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Consulta General</h3>
+                        <p>Evaluación médica completa para diagnóstico y tratamiento de enfermedades comunes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Control de Enfermedades Crónicas</h3>
+                        <p>Seguimiento personalizado para diabetes, hipertensión, colesterol y otras condiciones.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3>Chequeos Preventivos</h3>
+                        <p>Evaluaciones periódicas para detectar problemas de salud antes de que se manifiesten.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-injured"></i>
+                        </div>
+                        <h3>Manejo del Dolor</h3>
+                        <p>Enfoque integral para el tratamiento de dolor crónico y agudo.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h3>Pruebas Diagnósticas</h3>
+                        <p>Interpretación de análisis de sangre, estudios de imagen y otras pruebas médicas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3>Asesoramiento Nutricional</h3>
+                        <p>Guía personalizada para mejorar la salud a través de la alimentación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Schedule Section -->
+        <section class="section schedule-section" id="horario">
+            <div class="container schedule-container">
+                <h2 class="section-title">Horario de Atención</h2>
+                <p>Para consultas y citas, por favor contactar con la recepción. Urgencias disponibles con cita previa.</p>
+                
+                <table class="schedule-table">
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>9:00 - 13:00 | 16:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>9:00 - 13:00 | 16:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>9:00 - 13:00 | 16:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>9:00 - 13:00 | 16:00 - 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>9:00 - 13:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td class="closed">Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td class="closed">Cerrado</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contacto">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Calle Salud 123, Centro Médico Vitalia, Planta 3, Consultorio 305, Madrid</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+34 91 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>dr.javiermartinez@medicinainterna.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horario de Contacto</h4>
+                                <p>Lunes a Viernes: 8:30 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Solicitar Cita</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio de interés</label>
+                                <select id="service" required>
+                                    <option value="">Seleccione un servicio</option>
+                                    <option>Consulta General</option>
+                                    <option>Control de Enfermedades Crónicas</option>
+                                    <option>Chequeo Preventivo</option>
+                                    <option>Manejo del Dolor</option>
+                                    <option>Asesoramiento Nutricional</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje adicional</label>
+                                <textarea id="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Solicitar Cita</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Dr. Javier Martínez - Especialista en Medicina Interna</p>
+            <p class="copyright">Colegiado Nº 12345 - Colegio Oficial de Médicos de Madrid</p>
+        </div>
+    </footer>
+
+    <script src="./doctor-js/scripts.js"></script>
+</body>
+</html>

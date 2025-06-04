@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Goods | Productos de Calidad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./ecommerce-styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                Essential Goods
+            </div>
+            <div class="header-icons">
+                <button class="icon-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Productos esenciales para tu vida diaria</h1>
+            <p>Descubre nuestra colección cuidadosamente seleccionada de productos de calidad a precios accesibles.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn">Ver Productos</a>
+                <a href="#categories" class="btn btn-outline">Explorar Categorías</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Categories Section -->
+        <section class="section categories" id="categories">
+            <div class="container">
+                <h2 class="section-title">Categorías</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Ropa</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Electrónica</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Hogar</h3>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Bienestar</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="section" id="products">
+            <div class="container">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">Nuevo</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Smartwatch">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smartwatch Pro</h3>
+                            <div class="product-price">$89.99 <span class="old-price">$129.99</span></div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-badge">Oferta</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auriculares">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Auriculares Bluetooth</h3>
+                            <div class="product-price">$49.99 <span class="old-price">$79.99</span></div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(97)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auriculares">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Zapatos Urbanos</h3>
+                            <div class="product-price">$64.99</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(204)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="product-card">
+                        <div class="product-badge">-20%</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Macbook">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Laptop Ultraligera</h3>
+                            <div class="product-price">$899.99 <span class="old-price">$1,099.99</span></div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(56)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Perfume">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fragancia Éssence</h3>
+                            <div class="product-price">$39.99</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(87)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="product-card">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reloj">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Reloj Clásico</h3>
+                            <div class="product-price">$129.99</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(142)</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn add-to-cart">Añadir</button>
+                                <button class="action-btn view-details">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Envío Rápido</h3>
+                        <p>Entrega en 24-48 horas en pedidos seleccionados</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Pago Seguro</h3>
+                        <p>Tus datos siempre protegidos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h3>Devoluciones</h3>
+                        <p>30 días para cambiar de opinión</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Soporte 24/7</h3>
+                        <p>Asistencia cuando la necesites</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Los productos que compré superaron mis expectativas. La calidad es excelente y el envío fue increíblemente rápido. ¡Definitivamente volveré a comprar!
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">MC</div>
+                            <div>
+                                <h3>María Cortés</h3>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            El servicio al cliente es excepcional. Tuve un problema con mi pedido y lo resolvieron en menos de 24 horas. ¡Altamente recomendado!
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">JP</div>
+                            <div>
+                                <h3>Juan Pérez</h3>
+                                <p>Cliente frecuente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            La relación calidad-precio es inmejorable. He comparado con otras tiendas y siempre encuentro mejores ofertas aquí.
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">AG</div>
+                            <div>
+                                <h3>Ana García</h3>
+                                <p>Cliente satisfecha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Me encanta la variedad de productos. Siempre encuentro algo nuevo e interesante cada vez que visito la tienda.
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">DR</div>
+                            <div>
+                                <h3>David Rodríguez</h3>
+                                <p>Cliente premium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Únete a Nuestro Newsletter</h2>
+                <p>Recibe ofertas exclusivas y novedades antes que nadie</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn">Suscribirse</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Essential Goods</h3>
+                    <p>Tu tienda de confianza para productos de calidad a precios accesibles.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Nuevos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Mi Cuenta</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Direcciones</a></li>
+                        <li><a href="#">Cupones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Av. Comercial 456, Ciudad</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +34 123 456 789</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> info@essentialgoods.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> L-V: 9:00 - 20:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Essential Goods. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

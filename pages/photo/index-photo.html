@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensCraft | Fotografía Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link id="theme-style" rel="stylesheet" href="./photo-styles/styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Lens<span>Craft</span></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li>
+                        <button id="switch-style" class="btn" style="top: 1rem; right: 1rem; z-index: 1000;">
+                            Cambiar Estilo
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Capturando momentos, creando recuerdos</h1>
+            <p>Fotografía profesional con un enfoque artístico y emocional. Especializado en retratos, paisajes y eventos especiales.</p>
+            <a href="#contact" class="btn">Reserva tu sesión</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Portfolio Section con Carrusel -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Mi Portafolio</h2>
+                <p class="portfolio-intro">Explora mi colección de trabajos que capturan la esencia de cada momento con sensibilidad artística y atención al detalle.</p>
+                
+                <!-- Carrusel de fotos -->
+                <div class="carousel-container">
+                    <!-- Diapositiva 1 -->
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retrato masculino">
+                        <div class="slide-overlay">Retrato</div>
+                    </div>
+                    
+                    <!-- Diapositiva 2 -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Boda en la playa">
+                        <div class="slide-overlay">Boda</div>
+                    </div>
+                    
+                    <!-- Diapositiva 3 -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paisaje de montañas">
+                        <div class="slide-overlay">Paisaje</div>
+                    </div>
+                    
+                    <!-- Diapositiva 4 -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Retrato femenino">
+                        <div class="slide-overlay">Retrato</div>
+                    </div>
+                    
+                    <!-- Diapositiva 5 -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Producto artesanal">
+                        <div class="slide-overlay">Producto</div>
+                    </div>
+                    
+                    <!-- Diapositiva 6 -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concierto en vivo">
+                        <div class="slide-overlay">Evento</div>
+                    </div>
+                    
+                    <!-- Controles de navegación -->
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Indicadores de diapositivas -->
+                    <div class="carousel-controls">
+                        <div class="carousel-dot active" data-index="0"></div>
+                        <div class="carousel-dot" data-index="1"></div>
+                        <div class="carousel-dot" data-index="2"></div>
+                        <div class="carousel-dot" data-index="3"></div>
+                        <div class="carousel-dot" data-index="4"></div>
+                        <div class="carousel-dot" data-index="5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Con más de 10 años de experiencia en el mundo de la fotografía, mi pasión es capturar la esencia única de cada momento y persona.</p>
+                        <p>Mi enfoque combina técnica profesional con una sensibilidad artística que busca transmitir emociones a través de cada imagen. Creo que la mejor fotografía es aquella que cuenta una historia y evoca sentimientos.</p>
+                        <p>Me especializo en fotografía de retrato, eventos especiales y paisajes, siempre buscando la luz perfecta y la composición que mejor exprese la belleza del sujeto.</p>
+                        <a href="#contact" class="btn">Conoce mi trabajo</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fotógrafo profesional">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section-title">Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3>Bodas</h3>
+                        <p>Cobertura completa de tu día especial con un enfoque en momentos auténticos y emociones reales.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Retratos</h3>
+                        <p>Sesiones individuales, familiares o profesionales que capturan tu esencia y personalidad.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Paisajes</h3>
+                        <p>Impresionantes fotografías de naturaleza y entornos urbanos con enfoque artístico.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Comercial</h3>
+                        <p>Fotografía de productos, gastronomía y espacios para marcas y negocios.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Eventos</h3>
+                        <p>Cobertura de conciertos, conferencias, fiestas y eventos corporativos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Talleres</h3>
+                        <p>Clases personalizadas para aprender técnicas de fotografía y edición.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">Testimonios</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Las fotos de nuestra boda capturaron perfectamente la emoción del día. Cada vez que las vemos, revivimos esos momentos especiales.
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">MC</div>
+                            <div>
+                                <h3>María & Carlos</h3>
+                                <p>Boda en la playa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Contraté a LensCraft para las fotos de mi restaurante y el resultado superó mis expectativas. Las imágenes transmiten perfectamente nuestra esencia.
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">AJ</div>
+                            <div>
+                                <h3>Ana Jiménez</h3>
+                                <p>Fotografía comercial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Las fotos familiares que hicimos son las mejores que hemos tenido. Capturó la personalidad de cada uno y nuestra conexión como familia.
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">FG</div>
+                            <div>
+                                <h3>Familia Gómez</h3>
+                                <p>Sesión familiar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Como artista necesitaba fotos profesionales para mi portafolio. Las imágenes que creó no solo muestran mi trabajo, ¡son obras de arte en sí mismas!
+                        </div>
+                        <div class="client-info">
+                            <div class="client-avatar">DP</div>
+                            <div>
+                                <h3>Diego Pérez</h3>
+                                <p>Fotografía de portafolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>¿Listo para capturar momentos inolvidables? Contáctame para discutir tu proyecto o reservar una sesión.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Estudio</h3>
+                                <p>Calle Fotografía 123, Ciudad Creativa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+34 123 456 789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hola@lenscraft.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Tu email" required>
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option value="" disabled selected>Tipo de servicio</option>
+                                    <option>Boda</option>
+                                    <option>Retratos</option>
+                                    <option>Evento</option>
+                                    <option>Comercial</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LensCraft Fotografía Profesional. Todos los derechos reservados.</p>
+            <div class="copyright">
+                Diseñado con pasión por la fotografía y el arte visual.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./photo-js/script.js"></script>
+</body>
+</html>
